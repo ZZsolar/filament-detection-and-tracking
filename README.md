@@ -1,3 +1,5 @@
+![flowchat](./figures/fig1.png)
+
 # filament-detection-and-tracking
 Developing an Automated Detection, Tracking and Analysis Method for Solar Filaments Observed by CHASE via Machine Learning
 
