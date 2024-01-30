@@ -26,7 +26,7 @@ We have uploaded our .ipynb and .py files related to our work. Some code snippet
 # The introduction of each code
 
 ## `data_preparation.ipynb`
-We use this to get our dataset. This includes the code `readchase` for reading CHASE Hα spectral files and the code `keams_process` for preprocessing the spectra. Within this code segment, we employ 'sklearn.cluster.KMeans' for unsupervised clustering of the spectral data. Subsequently, we apply morphological closing operation on the results of K-means to obtain our dataset.
+We use this to get our dataset. This includes the function `readchase` for reading CHASE Hα spectral files and the function `keams_process` for preprocessing the spectra. Within this code segment, we employ 'sklearn.cluster.KMeans' for unsupervised clustering of the spectral data. Subsequently, we apply morphological closing operation on the results of K-means to obtain our dataset.
 
 You can get the file list of our dataset in this code, and then download the files from [Solar Science Data Center of Nanjing University](https://ssdc.nju.edu.cn/NdchaseSatellite). The file is too large to be conveniently uploaded here.
 
@@ -39,4 +39,4 @@ In addition, the code for model prediction and evaluation is also included in it
 This is our code for automated filament tracking. You can find the code flow of our tracking algorithm with helpful comments for better understanding. Additionally, it includes the tracking results of August 2023.
 
 ## `feature_extraction.py`
-You can run `python feature_extraction.py` to obtain the Hα line central imaging of the Chase Hα file, the detection result of filaments, the cloud model inversion results of filaments, and the results of straightening the filaments along the main axis.
+You can run `python feature_extraction.py` to obtain the Hα line central imaging of the Chase Hα file, the detection result of filaments, the cloud model inversion results of filaments, and the results of straightening the filaments along the main axis. The function `inversion_cloud` is used for cloud model inversion and `straightening_img` is used for straightening the filaments along the main axis.
