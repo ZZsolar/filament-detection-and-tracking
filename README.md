@@ -37,7 +37,7 @@ You can run `python train_unet.py` to train the unet model. `UNet` defines our U
 In addition, the code for model prediction and evaluation is also included in it.
 
 ## `track.ipynb`
-This is our code for automated filament tracking. You can find the code flow of our tracking algorithm with helpful comments for better understanding. Additionally, it includes the tracking results of August 2023.
+This is our code for automated filament tracking. You can find the code flow of our tracking algorithm with helpful comments for better understanding.
 
 ## `feature_extraction.py`
 You can run `python feature_extraction.py` to obtain the Hα line central imaging of the Chase Hα file, the detection result of filaments, the cloud model inversion results of filaments, and the results of straightening the filaments along the main axis. The function `inversion_cloud` is used for cloud model inversion and `straightening_img` is used for straightening the filaments along the main axis.
