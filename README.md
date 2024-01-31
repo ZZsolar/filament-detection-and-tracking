@@ -2,7 +2,9 @@
 
 Title: Developing an Automated Detection, Tracking and Analysis Method for Solar Filaments Observed by CHASE via Machine Learning
 
-We have uploaded our codes into the branch `main` and data into the branch `master`.
+We have uploaded our code into the branch `main` and data into the branch `master`.
+You can also find the code and data in Zendo [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10598419.svg)](https://doi.org/10.5281/zenodo.10598419).
+
 
 # Device and module 
 
