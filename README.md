@@ -2,7 +2,7 @@
 
 Title: Developing an Automated Detection, Tracking and Analysis Method for Solar Filaments Observed by CHASE via Machine Learning
 
-We have uploaded our .ipynb and .py files related to our work. Some code snippets are accompanied by comments to aid understanding.
+We have uploaded our codes into the branch `main` and data into the branch `master`.
 
 # Device and module 
 
@@ -24,7 +24,7 @@ We have uploaded our .ipynb and .py files related to our work. Some code snippet
 
 `torch`: 1.10.1+cu111.
 
-# The introduction of each code
+# Introduction of codes
 
 ## `data_preparation.ipynb`
 We use this to get our dataset. This includes the function `readchase` for reading CHASE Hα spectral files and the function `keams_process` for preprocessing the spectra. Within this code segment, we employ 'sklearn.cluster.KMeans' for unsupervised clustering of the spectral data. Subsequently, we apply morphological closing operation on the results of K-means to obtain our dataset.
@@ -41,3 +41,11 @@ This is our code for automated filament tracking. You can find the code flow of 
 
 ## `feature_extraction.py`
 You can run `python feature_extraction.py` to obtain the Hα line central imaging of the Chase Hα file, the detection result of filaments, the cloud model inversion results of filaments, and the results of straightening the filaments along the main axis. The function `inversion_cloud` is used for cloud model inversion and `straightening_img` is used for straightening the filaments along the main axis.
+
+# Introduction of data
+
+## detection/data
+This folder comprises the training set `train.zip`, validation set `valid.zip`, test set `test.zip`, and the state dictionary of our U-Net model `model.zip`.
+
+## tracking
+This folder includes 10 groups of results for tracking filaments, along with our accuracy log `result.xlsx`.
