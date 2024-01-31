@@ -1,0 +1,5 @@
+detection/data/. filter=lfs diff=lfs merge=lfs -text
+detection/data/model.zip filter=lfs diff=lfs merge=lfs -text
+detection/data/test.zip filter=lfs diff=lfs merge=lfs -text
+detection/data/train.zip filter=lfs diff=lfs merge=lfs -text
+detection/data/valid.zip filter=lfs diff=lfs merge=lfs -text
